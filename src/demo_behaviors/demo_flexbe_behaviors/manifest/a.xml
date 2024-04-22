@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="a">
+
+	<executable package_path="demo_flexbe_behaviors.a_sm" class="aSM" />
+	<tagstring>a</tagstring>
+	<author>a</author>
+	<date>Thu Mar 02 2023</date>
+	<description>
+		a
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+	<params>
+
+		<param type="text" name="floor" default="" label="floor" hint="Sets the floor" />
+
+	</params>
+
+
+</behavior>
