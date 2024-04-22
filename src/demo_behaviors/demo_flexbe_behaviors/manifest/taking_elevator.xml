@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="taking_elevator">
+
+	<executable package_path="demo_flexbe_behaviors.taking_elevator_sm" class="taking_elevatorSM" />
+	<tagstring></tagstring>
+	<author>gqc</author>
+	<date>Thu Mar 02 2023</date>
+	<description>
+		case:in front of the elevator,ask somebody to help taking the elevator.
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+	<params>
+
+		<param type="numeric" name="floor" default="0" label="floor" hint="Sets the floor">
+			<min value="0" />
+			<max value="1" />
+		</param>
+
+	</params>
+
+
+</behavior>

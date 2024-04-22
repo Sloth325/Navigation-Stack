@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="chat">
+
+	<executable package_path="demo_flexbe_behaviors.chat_sm" class="chatSM" />
+	<tagstring>chat</tagstring>
+	<author>gqc</author>
+	<date>Thu Mar 02 2023</date>
+	<description>
+		a simple chat behavior containing get weather, time,telling a joke.
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>

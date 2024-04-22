@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="pass_door1">
+
+	<executable package_path="demo_flexbe_behaviors.pass_door1_sm" class="pass_door1SM" />
+	<tagstring></tagstring>
+	<author>gqc</author>
+	<date>Wed Mar 01 2023</date>
+	<description>
+		behavior of passing doors
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>
