@@ -1,0 +1,31 @@
+<launch>
+    <!-- start base and load model -->
+    <include file="$(find hunter_base)/launch/hunter_base.launch">
+        <arg name="port_name" default="can0" />
+        <arg name="simulated_robot" default="false" />
+        <arg name="publish_tf" default="false" />
+    </include>
+    
+    <include file="$(find hesai_lidar)/launch/hesai_lidar.launch">
+        <arg name="lidar_type" default="PandarQT" />
+        <arg name="frame_id" default="PandarQT" />
+    </include>
+    
+    <include file="$(find handsfree_ros_imu)/launch/handsfree_imu.launch">
+        <arg name="imu_type" default="a9" />
+    </include>
+    
+    <include file="$(find pointcloud_to_laserscan)/launch/pointcloud2scan.launch">
+    </include>
+    
+    <include file="$(find hunter_se_description)/launch/display.launch">
+    </include>
+
+    <!-- <include file="$(find usb_cam)/launch/usb_cam-test.launch">
+    </include> -->
+
+    <!-- <include file="$(find hunter_bringup)/launch/hunter_gmapping.launch">
+    </include> -->
+<node pkg="tf" type="static_transform_publisher" name="base_link_PandarQT" args="0.29 0 0.332 1.57 0 0 base_link PandarQT 100" /> 
+
+</launch>
